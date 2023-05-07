@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    background: #dfe9f5;
+}
+
+.admin-panel ul {
+    margin: 0;
+    padding: 0;
+}
+
+.admin-panel ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.admin-panel {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: #fff;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 20px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+}
+
+.logo span {
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.admin-panel ul li .menu {
+    position: relative;
+    color: gray;
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.admin-panel ul li i {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-item {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+.admin-panel ul li a:hover,
+.admin-panel ul li .active {
+    background: #9b9b9b;
+}
+
+.admin-panel:hover {
+    width: 280px;
+    background: #f0ecff;
+    transition: all .5s ease;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    margin: 0;
+}
+
+.dashboard .title {
+    min-width: 70%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.dashboard .profile {
+    margin: 10px 20px 10px 10px;
+    overflow: hidden;
+}
+
+.dashboard .profile a {
+    text-decoration: none;
+    background: #ff2d5a;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.dashboard .profile img {
+    width: 100%;
+}
+
+.dashboard-wrapper {
+    margin-left: 100px;
+}
+
+.product-wrapper {
+    padding: 25px;
+}
+
+.product-wrapper .title {
+    font-size: 30px;
+    font-weight: 600;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-wrapper .title button {
+    font-size: 18px;
+    margin: 15px;
+    border: none;
+    padding: 6px;
+    background: #796aff;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+}
+
+.table-wrapper {
+    background: #fff;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.table-wrapper table tr {
+    user-select: none;
+}
+
+.table-wrapper table tr td {
+    color: rgb(107, 107, 107);
+}
+
+.table-wrapper table tr:hover {
+    background: #eee;
+    transition: .2s;
+}
+
+td {
+    min-width: 100px;
+}
+
+td button {
+    margin: 0 5px;
+    border: none;
+    padding: 5px 4px;
+    background: #4df58d;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+td button.promote {
+    background: #5087ff;
+    width: auto;
+    color: white;
+    font-weight: 600;
+    vertical-align: middle;
+    padding: 3px;
+}
+td button.demote {
+    background: #ffb950;
+    width: auto;
+    color: white;
+    font-weight: 600;
+    vertical-align: middle;
+    padding: 3px;
+}
+
+td button.del {
+    background: red;
+}
+
+td button i {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
